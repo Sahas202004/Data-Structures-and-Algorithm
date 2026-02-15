@@ -10,7 +10,7 @@ public class BinarySearch {
         int res=binarySearch(nums,target);
         System.out.println(res);
     }
-    //    The Function Returns the target's index if it is available in the nums[];
+//    The Function Returns the target's index if it is available in the nums[];
 //    Else it returns -1;
 //    Since it implements Binary Search, the Time Complexity is O(log n);
     static int binarySearch(int[] nums,int target){
