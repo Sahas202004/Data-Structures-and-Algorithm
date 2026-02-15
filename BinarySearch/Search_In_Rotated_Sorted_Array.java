@@ -103,7 +103,7 @@ public class Search_In_Rotated_Sorted_Array {
             else if(nums[mid]<target){
                 start=mid+1;
             }
-//            if both the above conditions are false, that means our value si found
+//            if both the above conditions are false, that means our value is found
 //            at middle index; So return Middle;
             else{
                 return mid;

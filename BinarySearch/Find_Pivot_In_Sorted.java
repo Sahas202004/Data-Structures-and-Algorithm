@@ -43,7 +43,7 @@ public class Find_Pivot_In_Sorted {
             }
 //            else we know start > mid therefore we will bring end pointer pointing to middle
 //            because we have to find the break point since there is only one.
-//            (a break point is a point where a number is greater than its next number or it smaller than the previous
+//            (a break point is a point where a number is greater than its next number, or it's smaller than the previous
 //            one)
             else{
                 end=mid;
