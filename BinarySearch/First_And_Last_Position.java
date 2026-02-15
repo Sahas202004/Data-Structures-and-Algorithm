@@ -25,7 +25,7 @@ public class First_And_Last_Position {
         int index=-1;
 //        Declare and Initialize start=0;
         int start=0;
-//        Declare and Initialize end with the last index of the nums[];
+//        Declare an Initialize end with the last index of the nums[];
         int end=nums.length-1;
 
 //        Inside the while loop, we will be increasing the value of start
