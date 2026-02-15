@@ -26,7 +26,7 @@ public class Kth_Missing_Positive_Integer {
 //    <--If You are doing simple Binary Search Problems and encountered this first time and are not able to
 //    solve, don't feel demotivated because it's just a different pattern. it's a pattern shift, try to understand
 //    it rather than just copying the whole stuff. At last, you will find that it's slightly different from the normal
-//    BS, but it is way easier problem. iam tell you by my experience,keep your head up and dive into this new pattern-->
+//    BS, but it is way easier problem. iam telling you by my experience,keep your head up and dive into this new pattern-->
 
     static int findKthMissingPositiveInteger(int[] nums,int k){
 //        Initialize start variable with 0th index of nums;
