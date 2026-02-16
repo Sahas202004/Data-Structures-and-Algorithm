@@ -1,3 +1,5 @@
+package src;
+
 public class First_And_Last_Position {
     public static void main(String[] args) {
         int[] nums={1,2,3,3,4,4,4,4,6};

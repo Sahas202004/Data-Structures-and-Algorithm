@@ -1,3 +1,5 @@
+package src;
+
 public class Find_Pivot_In_Sorted {
     public static void main(String[] args) {
         int[] nums={5,6,7,8,9,0,1,2};

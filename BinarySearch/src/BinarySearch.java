@@ -1,38 +1,23 @@
-//You are given n versions [1,2,3,...,n].
-//You are told that after some version, all following versions are bad.
-//
-//You need to find the first bad version using minimum API calls.
+package src;//Given a sorted array of integers nums (in ascending order) and an integer target, return the index of target if it exists in the array. Otherwise, return -1.
+//You must write an algorithm with O(log n) runtime complexity.
 
-//Test Case 1
-//Input: n = 5, bad = 4
-//Output: 4
 
-//Test Case 2
-//Input: n = 1, bad = 1
-//Output: 1
-
-//Test Case 3
-//Input: n = 10, bad = 7
-//Output: 7
-
-//This Question is Nothing But Simple Binary Search.
-
-public class First_Bad_Version {
+public class BinarySearch {
     public static void main(String[] args) {
-        int n = 10;
-        int bad = (int) (Math.random()*20);
+        int[] nums={1,3,5,7,8,9,10};
+        int target=9;
 
-        int res = binarySearch(n, bad);
+        int res=binarySearch(nums,target);
         System.out.println(res);
     }
-//    The Function Returns the first bad version if it is available in n;
+//    The Function Returns the target's index if it is available in the nums[];
 //    Else it returns -1;
 //    Since it implements Binary Search, the Time Complexity is O(log n);
-    static int binarySearch(int num,int bad){
+    static int binarySearch(int[] nums,int target){
 //        Declare and Initialize start=0;
         int start=0;
-//        Declare and Initialize end with n;
-        int end=num;
+//        Declare and Initialize end with the last index of the nums[];
+        int end=nums.length-1;
 
 //        Inside the while loop, we will be increasing the value of start
 //        and decreasing the value of end based on some conditions.
@@ -46,22 +31,24 @@ public class First_Bad_Version {
 //            Conditions:-
 //            The first condition checks if the middle value is greater than target.
 //            If yes,then the end pointer will be re-initialized with value of middle-1
-            if(mid>bad){
+//            index
+            if(nums[mid]>target){
                 end=mid-1;
             }
 //            if first condition is false, then this condition is checked.
 //            it checks if the middle value is less than the target.
 //            if yes then the start pointer is re-initialized with value of middle+1
-            else if(mid<bad){
+//            index
+            else if(nums[mid]<target){
                 start=mid+1;
             }
-//            if both the above conditions are false, that means our value is found
-//            at middle; So return Middle;
+//            if both the above conditions are false, that means our value si found
+//            at middle index; So return Middle;
             else{
                 return mid;
             }
         }
-//        There is no bad version in the range.
+//        The target is not in the given nums[] array.
 //        So return -1;
         return -1;
     }

@@ -1,4 +1,4 @@
-//There is an integer array sorted in ascending order and then rotated at some pivot.
+package src;//There is an integer array sorted in ascending order and then rotated at some pivot.
 //Example:
 //[0,1,2,4,5,6,7] → rotated → [4,5,6,7,0,1,2]
 //Given nums and target, return index if found, else -1.
