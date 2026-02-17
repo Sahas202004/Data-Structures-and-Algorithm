@@ -1,4 +1,5 @@
-package src;//Given a sorted array of integers nums (in ascending order) and an integer target, return the index of target if it exists in the array. Otherwise, return -1.
+package src;
+//Given a sorted array of integers nums (in ascending order) and an integer target, return the index of target if it exists in the array. Otherwise, return -1.
 //You must write an algorithm with O(log n) runtime complexity.
 
 
